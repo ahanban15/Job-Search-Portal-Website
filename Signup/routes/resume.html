@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indeed Clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/resume_style.css">
+    <script src="https://kit.fontawesome.com/88ebba7a68.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand-logo" href="#">
+              <img src="https://1000logos.net/wp-content/uploads/2023/01/Indeed-Logo-2004.png" width="170" height="70" class="d-inline-block" alt="logo">
+            </a>
+          </nav>
+          
+          <button type="button" class="btn btn-outline-primary"><a href="/add_job">Post a Job Notification</a></button>
+          <button type="button" class="btn btn-outline-primary"><a href="/show_job">Show Job Notifications</a></button>
+          <button type="button" class="btn btn-outline-primary"><a href="/apply">Apply Job</a></button>          
+          <button type="button" class="btn btn-outline-primary"><a href="/profile_update">Update the profile</a></button>
+          <button type="button" class="btn btn-outline-primary"><a href="/show_profile">Show Profile</a></button>
+          <button type="button" class="btn btn-outline-primary"><a href="/logout/logout">Logout</a></button>
+          
+    </div>
+    <hr>
+    
+    <h1>Upload your Resume</h1>
+    <br>
+    <div class="form">    <form action="/resume/upload_resume" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileUpload" placeholder="Choose File">
+    <br>
+    <br>
+    <input type="submit" value="Upload">
+    </form>
+    </div>
+          
+    <div class="news-container">
+      <hr>
+      <div class="news-header">Indeed Trending</div>
+      <div class="news-content">
+        <p>This is an example of a trending news article on Indeed.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit elit a lacus euismod, eget scelerisque nulla laoreet.</p>
+      </div>
+      <div class="news-footer">Posted by Admin · 1 hour ago</div>
+    </div>
+
+    <div class = "footer">
+        <footer>
+            <hr>
+            <div class="footer-content">
+              <p>&copy; 2023 Indeed-clone.com. All rights reserved.</p>
+              <nav>
+                <ul>
+                  <li><a href="#">Company Reviews</a></li>
+                  <li><a href="#">Salary Guide</a></li>
+                  <li><a href="#">Accessibility Centre</a></li>
+                  <li><a href="#">Privacy Centre</a></li>
+                  <li><a href="#">Cookies</a></li>
+                  <li><a href="#">Terms</a></li>
+                  </ul>
+              </nav>
+            </div>
+          </footer>
+    </div>
+
+    
+</body>
+</html>

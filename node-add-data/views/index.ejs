@@ -1,0 +1,71 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Indeed Clone</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/88ebba7a68.js" crossorigin="anonymous"></script>
+  
+  </head>
+  <body>
+      <div class="navbar">
+          <nav class="navbar navbar-light">
+              <a class="navbar-brand-logo" href="#">
+                <img src="https://1000logos.net/wp-content/uploads/2023/01/Indeed-Logo-2004.png" width="170" height="70" class="d-inline-block" alt="logo">
+              </a>
+            </nav>
+            
+            
+            <button type="button" class="btn btn-outline-primary">Find Jobs</button>
+            <button type="button" class="btn btn-outline-primary">Company Reviews</button>
+            <button type="button" class="btn btn-outline-primary">Salary Guide</button>
+            <button type="button" class="btn btn-outline-primary">Upload your Resume</button>
+            <button type="button" class="btn btn-primary">Sign In</button>
+            <button type="button" class="btn btn-outline-primary">Post Job</button>
+            
+      </div>
+      <hr>
+      <h1>Add a Job Notification</h1>
+      <div class="form">
+        <% if (messages.success) { %>
+          <p class="alert alert-success mb-3"><%- messages.success %></p>
+          <% } %>
+    
+          <!-- <form method="POST" action="user_form" class="form-inline"> -->
+          <form method="POST" action="user_form">
+              <label for="Job_Role">Job Role:</label>
+              <input type="text" id="jobrole" name="jobrole" required>
+              
+              <label for="Job_City">Job City:</label>
+              <input type="text" id="jobcity" name="jobcity" required>
+              
+              <label for="Job_Company">Job Company:</label>
+              <input type="text" id="jobcompany" name="jobcompany" required>
+
+              <label for="salary">Salary:</label>
+              <input type="text" id="salary" name="salary" required>
+
+              <button type="submit" class="btn btn-primary">Add n Post Job</button>
+            </form>
+      </div>
+      <div class = "footer">
+        <footer>
+            <hr>
+            <div class="footer-content">
+              <p>&copy; 2023 Indeed-clone.com. All rights reserved.</p>
+              <nav>
+                <ul>
+                  <li><a href="#">Accessibility Centre</a></li>
+                  <li><a href="#">Privacy Centre</a></li>
+                  <li><a href="#">Cookies</a></li>
+                  <li><a href="#">Terms</a></li>
+                </ul>
+              </nav>
+            </div>
+          </footer>
+    </div>
+            
+  </body>
+</html>
